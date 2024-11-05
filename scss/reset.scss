@@ -1,0 +1,98 @@
+$font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Open Sans", "Helvetica Neue", sans-serif;
+$line-height-body: 1.5;
+$line-height-heading: 1.15;
+$focus-outline-color: #0078d4;
+$focus-outline-width: 3px;
+$focus-outline-offset: 2px;
+$base-padding: 0.2rem;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-stack;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-wrap: break-word;
+    line-height: $line-height-body;
+    text-rendering: optimizeSpeed;
+}
+
+// headings:
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: inherit;
+    text-wrap: balance;
+    line-height: $line-height-heading;
+}
+
+// text elements:
+p,
+li,
+div {
+    text-wrap: pretty;
+}
+
+/* form elements: */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+
+    &:focus {
+        outline: $focus-outline-width solid $focus-outline-color;
+        outline-offset: $focus-outline-offset;
+    }
+}
+
+button {
+    cursor: pointer;
+    padding: $base-padding;
+}
+
+// media elements:
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+// list elements:
+ol,
+ul,
+dl {
+    list-style: none;
+}
+
+// links:
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: $base-padding;
+    display: inline-block;
+}
