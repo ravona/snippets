@@ -1,0 +1,23 @@
+@mixin collection($variant) {
+    display: grid;
+
+    @if $variant == 1 {
+        // For smaller items like form fields or action buttons
+        // Creates a dense grid with many columns
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: var(--spacing-sm);
+        justify-content: center;
+    } @else if $variant == 2 {
+        // For medium-sized items like cards or product tiles
+        // Creates a balanced grid with moderate spacing
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--spacing-sm);
+        justify-content: center;
+    } @else if $variant == 3 {
+        // For larger items like featured cards or image galleries
+        // Creates a spacious grid with fewer columns
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: var(--spacing-sm);
+        justify-content: center;
+    }
+}

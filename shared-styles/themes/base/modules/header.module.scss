@@ -1,0 +1,14 @@
+@use "../mixins/mq" as *;
+
+.sections {
+    @include mq(md) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: var(--spacing-xl);
+    }
+}
+
+.section {
+    margin-bottom: var(--spacing-sm);
+}

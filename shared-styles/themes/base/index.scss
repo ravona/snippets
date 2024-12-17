@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "./fonts" as *;
+@use "./theme" as theme;
+@use "../../shared/abstracts/mixins/index.scss" as *;
+
+.theme--base {
+    @include generateTheme(theme.$theme);
+}
+
+@include generateWrappers(theme.$breakpoints);

@@ -1,7 +1,0 @@
-@use "./fonts" as *;
-@use "./theme" as *;
-@use "../mixins/create-theme.scss" as *;
-
-.theme--base {
-    @include create-theme($theme);
-}

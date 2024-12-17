@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "sass:color";
+@use "../../themes/base/theme" as *;
+
+.button {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    white-space: nowrap;
+    border-radius: var(--spacing-xs);
+    font-family: var(--ff-secondary);
+    text-align: center;
+
+    &:disabled {
+        background-color: var(--c-variant-disabled);
+        cursor: not-allowed;
+    }
+}
+
+@each $category, $values in map.get($theme, "colors") {
+    @each $key, $value in $values {
+        .button-variant--#{$key} {
+            background-color: $value;
+        }
+    }
+}

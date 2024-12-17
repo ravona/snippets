@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+
+    /* Prevent font size inflation */
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    text-rendering: optimizeSpeed;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+label,
+legend {
+    line-height: 1.1;
+}
+
+// form elements:
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    max-width: 100%;
+}
+
+textarea:not([rows]) {
+    min-height: 10rlh;
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset {
+    border: none;
+}
+
+legend,
+select,
+label,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="range"] {
+    display: block;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+// text elements:
+blockquote,
+dd,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+    text-wrap: pretty;
+    max-width: 70ch;
+}
+
+// media elements:
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+// list elements:
+ol,
+ul,
+dl {
+    list-style: none;
+}
+
+// links:
+a {
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}

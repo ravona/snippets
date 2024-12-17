@@ -1,0 +1,15 @@
+@mixin txt(
+    $color: null,
+    $font-weight: null,
+    $font: var(--ff-primary),
+    $size: var(--fz-sm),
+    $text-align: null,
+    $text-transform: null
+) {
+    color: $color;
+    font-family: $font;
+    font-size: $size;
+    font-weight: $font-weight;
+    text-align: $text-align;
+    text-transform: $text-transform;
+}

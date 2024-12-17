@@ -1,0 +1,32 @@
+@use "sass:map";
+@use "../base/theme" as base;
+
+$colors: (
+    bg: map.get(base.$colors, "bg"),
+    brand: (
+        60: hsl(0, 54%, 25%),
+        30: hsl(45, 75%, 44%),
+        10: hsl(29, 28%, 19%),
+    ),
+    txt: map.get(base.$colors, "txt"),
+    variant: map.get(base.$colors, "variant"),
+);
+
+$fontFamilies: (
+    primary: (
+        "Playfair Display",
+        serif,
+    ),
+    secondary: (
+        "Berkshire Swash",
+        serif,
+    ),
+);
+
+$theme: map.merge(
+    base.$theme,
+    (
+        colors: $colors,
+        fontFamilies: $fontFamilies,
+    )
+);

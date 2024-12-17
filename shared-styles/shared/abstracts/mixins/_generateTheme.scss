@@ -1,6 +1,6 @@
 @use "sass:map";
 
-@mixin create-theme($theme) {
+@mixin generateTheme($theme) {
     @each $category, $values in map.get($theme, "colors") {
         @each $key, $value in $values {
             --c-#{$category}-#{$key}: #{$value};
@@ -29,5 +29,13 @@
 
     @each $key, $value in map.get($theme, "shadows") {
         --shadow-#{$key}: #{$value};
+    }
+
+    @each $key, $value in map.get($theme, "borders") {
+        --border-#{$key}: #{$value};
+    }
+
+    @each $key, $value in map.get($theme, "corners") {
+        --corners-#{$key}: #{$value};
     }
 }

@@ -1,0 +1,7 @@
+@use "./fonts" as *;
+@use "./theme" as *;
+@use "../../shared/abstracts/mixins/generateTheme" as *;
+
+.theme--potter {
+    @include generateTheme(r$theme);
+}

@@ -1,0 +1,63 @@
+@use "../abstracts/mixins" as *;
+
+$radius: 8px;
+$transition: all 0.3s ease-in;
+$card-width: 300px;
+
+.cards--2 {
+    @include collection(2);
+    margin-bottom: var(--spacing-lg);
+
+    .card {
+        position: relative;
+        box-shadow: var(--shadow-1);
+        transition: $transition;
+
+        &:hover {
+            box-shadow: var(--shadow-2);
+
+            .card__image {
+                filter: brightness(20%);
+                transition: $transition;
+            }
+
+            .card__content {
+                transform: translateY(-1ch);
+                transition: $transition;
+            }
+        }
+
+        .card__image {
+            position: absolute;
+            border-radius: $radius;
+            filter: brightness(50%);
+            transition: $transition;
+        }
+
+        .card__content {
+            padding: var(--spacing-md);
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            transition: $transition;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .card__heading {
+            font-size: var(--fz-md);
+            font-family: var(--ff-secondary);
+            text-transform: uppercase;
+            color: var(--c-brand-60);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .card__description {
+            font-size: var(--fz-md);
+            color: var(--c-txt-secondary);
+            line-height: 1.15;
+            transition: $transition;
+        }
+    }
+}
