@@ -1,22 +1,32 @@
 @mixin flex(
-    $direction: row,
-    $align: stretch,
-    $justify: flex-start,
-    $wrap: nowrap,
-    $gap: var(--spacing-sm)
+  $direction: row,
+  $align: stretch,
+  $justify: flex-start,
+  $wrap: nowrap,
+  $gap: var(--spacing-sm)
 ) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    flex-wrap: $wrap;
-    gap: $gap;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
 }
 
-@mixin flexRow($x: flex-start, $y: stretch, $wrap: nowrap, $gap: var(--spacing-sm)) {
-    @include flex(row, $x, $y, $wrap, $gap);
+@mixin flex_row(
+  $x: flex-start,
+  $y: stretch,
+  $wrap: nowrap,
+  $gap: var(--spacing-sm)
+) {
+  @include flex(row, $x, $y, $wrap, $gap);
 }
 
-@mixin flexCol($x: stretch, $y: flex-start, $wrap: nowrap, $gap: var(--spacing-sm)) {
-    @include flex(column, $x, $y, $wrap, $gap);
+@mixin flex_col(
+  $x: stretch,
+  $y: flex-start,
+  $wrap: nowrap,
+  $gap: var(--spacing-sm)
+) {
+  @include flex(column, $x, $y, $wrap, $gap);
 }

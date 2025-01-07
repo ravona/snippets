@@ -1,7 +1,0 @@
-@use "./fonts" as *;
-@use "./theme" as *;
-@use "../../shared/abstracts/mixins/generateTheme" as *;
-
-.theme--pastel {
-    @include generateTheme($theme);
-}

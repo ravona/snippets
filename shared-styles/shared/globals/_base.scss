@@ -1,0 +1,27 @@
+.heading,
+.nav,
+.label,
+.legend,
+.button {
+  font-family: var(--ff-secondary);
+}
+
+.link {
+  color: var(--color-brand-10);
+
+  &:hover {
+    color: var(--color-variant-action);
+  }
+}
+
+.button {
+  white-space: nowrap;
+  border-radius: var(--spacing-xs);
+  text-align: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+
+  &:disabled {
+    background-color: var(--color-variant-disabled);
+    cursor: not-allowed;
+  }
+}

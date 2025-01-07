@@ -1,0 +1,61 @@
+@use "../../../../shared/abstracts/mixins/collection" as *;
+
+.fieldset {
+  @include collection_2();
+}
+
+.field {
+  visibility: visible;
+}
+
+.options {
+  display: grid;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.label,
+.legend {
+  color: var(--color-brand-30);
+  font-family: var(--ff-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.option .label {
+  margin-bottom: 0;
+}
+
+.input {
+  accent-color: var(--color-brand-10);
+}
+
+.input[type="text"],
+.input[type="number"],
+.input[type="email"],
+.input[type="password"],
+.input[type="tel"],
+.input[type="date"],
+.input[type="url"],
+.input[type="range"],
+.select,
+.textarea {
+  // min-height: 2.5lh;
+  color: var(--color-txt-primary);
+  border: 1px solid var(--color-brand-30);
+  padding: var(--spacing-xs);
+  box-shadow: var(--shadow-3);
+  &:hover {
+    border-color: var(--color-variant-action);
+  }
+}
+
+.error {
+  color: var(--color-variant-error);
+  font-size: var(--fs-sm);
+}

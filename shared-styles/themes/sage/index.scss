@@ -1,0 +1,11 @@
+@forward "./mixins/index.scss";
+@forward "./ui/index.scss";
+
+@use "./theme" as theme;
+@use "../../shared/abstracts/mixins/index.scss" as *;
+
+.theme--sage {
+  @include generate_theme(theme.$theme);
+}
+
+@include generate_wrappers(theme.$breakpoints);

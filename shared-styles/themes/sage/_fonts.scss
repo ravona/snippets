@@ -1,0 +1,56 @@
+// Option 1:
+// Inter + Outfit
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700&display=swap");
+
+// $font-primary: "Inter", sans-serif;
+// $font-secondary: "Outfit", sans-serif;
+
+$fonts_1: (
+  primary: (
+    "Inter",
+    sans-serif,
+  ),
+  secondary: (
+    "Outfit",
+    sans-serif,
+  ),
+);
+
+// Option 2:
+// Plus Jakarta Sans + Source Sans 3
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;700&display=swap");
+
+// $font-primary: "Plus Jakarta Sans", sans-serif;
+// $font-secondary: "Source Sans 3", sans-serif;
+
+$fonts_2: (
+  primary: (
+    "Plus Jakarta Sans",
+    sans-serif,
+  ),
+  secondary: (
+    "Source Sans 3",
+    sans-serif,
+  ),
+);
+
+// Option 3:
+// Open Sans + Lato
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;400;700&display=swap");
+
+// $font-primary: "Open Sans", sans-serif;
+// $font-secondary: "Lato", sans-serif;
+
+$fonts_3: (
+  primary: (
+    "Open Sans",
+    sans-serif,
+  ),
+  secondary: (
+    "Lato",
+    sans-serif,
+  ),
+);

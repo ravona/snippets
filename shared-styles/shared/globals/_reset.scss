@@ -1,23 +1,39 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
-    height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+
+  /* Prevent font size inflation */
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body {
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    text-rendering: optimizeSpeed;
-    height: 100%;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+label,
+legend {
+  line-height: 1.1;
 }
 
 // form elements:
@@ -25,21 +41,24 @@ button,
 input,
 select,
 textarea {
-    font: inherit;
-    line-height: inherit;
-    color: inherit;
-    background: none;
-    border: none;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  max-width: 100%;
+}
+
+textarea:not([rows]) {
+  min-height: 10rlh;
+}
+
+textarea {
+  resize: none;
 }
 
 fieldset {
-    border: none;
-}
-
-legend,
-label {
-    display: block;
-    width: 100%;
+  border: none;
 }
 
 legend,
@@ -52,12 +71,12 @@ input[type="password"],
 input[type="tel"],
 input[type="date"],
 input[type="range"] {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 // text elements:
@@ -72,43 +91,44 @@ h5,
 h6,
 li,
 p {
-    text-wrap: pretty;
-    max-width: 70ch;
-}
-
-// headings:
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font: inherit;
-    text-wrap: balance;
-    line-height: 1.1;
+  text-wrap: pretty;
+  max-width: 70ch;
 }
 
 // media elements:
 img,
 picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
+svg,
+video {
+  display: block;
+  max-width: 100%;
 }
 
 // list elements:
 ol,
 ul,
 dl {
-    list-style: none;
+  list-style: none;
 }
 
 // links:
 a {
-    font: inherit;
-    text-decoration: none;
-    color: inherit;
-    display: inline-flex;
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 2rem;
+  scroll-margin-block: 5rlh;
+}
+
+header,
+footer,
+main,
+section,
+article {
+  container-type: inline-size;
 }

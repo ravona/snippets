@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "sass:color";
+@use "../theme" as theme;
+
+.button {
+  color: var(--color-txt-secondary);
+}
+
+@each $category, $values in map.get(theme.$theme, "colors") {
+  @each $key, $value in $values {
+    .button-color-#{$category}--#{$key} {
+      background-color: $value;
+    }
+  }
+}

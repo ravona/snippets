@@ -1,0 +1,140 @@
+{
+  "features": [
+    {
+      "name": "Only tested and verified professionals",
+      "description": "We make sure that all professionals are verified and tested before they can offer their services on our platform."
+    },
+    {
+      "name": "Customer support",
+      "description": "We provide 24/7 customer support to make sure that you get the best experience possible."
+    },
+    {
+      "name": "Free consultation",
+      "description": "We provide free consultation to help you find the best professional for your needs."
+    },
+    {
+      "name": "Secure payments",
+      "description": "We provide secure payments to make sure that your money is safe."
+    },
+    {
+      "name": "Easy to use",
+      "description": "Our platform is easy to use and navigate, so you can find the professional you need quickly and easily."
+    },
+    {
+      "name": "Wide range of services",
+      "description": "We offer a wide range of services to make sure that you can find the professional you need."
+    }
+  ],
+  "glossary": {
+    "event": "Event",
+    "eventProfessional": "Event Planner",
+    "insurance": "Insurance",
+    "insuranceProfessional": "Insurance Agent",
+    "lead": "Lead",
+    "leads": "Leads",
+    "legal": "Legal",
+    "legalProfessional": "Lawyer",
+    "mortgage": "Mortgage",
+    "mortgageProfessional": "Mortgage Broker",
+    "offer": "Offer",
+    "offers": "Offers",
+    "professional": "Professional",
+    "professionals": "Professionals",
+    "vendor": "Vendor",
+    "vendors": "Vendors"
+  },
+  "mission": {
+    "cta": "Get started",
+    "description": "We simplify the process of finding trustworthy professionals by providing a platform that connects clients with verified, tested professionals. Our platform offers a wide range of services to make sure that you can find any professional, quickly and easily.",
+    "title": "Simplify the process of finding professionals"
+  },
+  "name": "LeadX",
+  "ratingsCount": "{count, plural, =0 {No ratings yet} one {# rating} other {# ratings}}",
+  "service": {
+    "form": {
+      "description": "Fill out the form below and we'll connect you with qualified professionals.",
+      "title": "Need help with {service}?",
+      "type": "Service Type"
+    }
+  },
+  "stats": [
+    {
+      "name": "Successful Transactions",
+      "value": "1000+"
+    },
+    {
+      "name": "Business Partners",
+      "value": "500+"
+    },
+    {
+      "name": "Avg. ROI Improvement",
+      "value": "25%"
+    },
+    {
+      "name": "Customer Satisfaction",
+      "value": "95%"
+    }
+  ],
+  "tagline": "Connecting leads to sales",
+  "validations": {
+    "name": {
+      "minLength": "Name must be at least 2 characters long"
+    },
+    "phone": {
+      "pattern": "Phone number can only contain numbers, spaces, and the following characters: + - ( )",
+      "maxLength": "Phone number cannot exceed 15 digits",
+      "minLength": "Phone number must be at least 10 digits"
+    }
+  },
+  "vendors": {
+    "benefits": {
+      "items": [
+        {
+          "name": "Verified Professionals",
+          "description": "Every vendor undergoes thorough verification and regular quality checks"
+        },
+        {
+          "name": "Instant Matching",
+          "description": "Advanced algorithms ensure the perfect fit for every lead"
+        },
+        {
+          "name": "Quality Assurance",
+          "description": "Continuous monitoring and feedback system to maintain high standards"
+        }
+      ],
+      "title": "Why Choose Our Vendors?"
+    },
+    "cta": {
+      "become": "Become a Vendor",
+      "description": "Join our network of successful professionals or find the perfect vendor for your needs",
+      "find": "Find a Vendor",
+      "title": "Ready to Get Started?"
+    },
+    "overview": {
+      "title": "Only Verified Professionals",
+      "description": "Connect with pre-vetted experts who consistently deliver exceptional results. Every vendor is regularly reviewed to ensure the highest quality standards."
+    },
+    "stats": [
+      {
+        "name": "Active Vendors",
+        "description": "Verified professionals",
+        "value": "2,400+"
+      },
+      {
+        "name": "Open Leads",
+        "description": "Ready to be claimed",
+        "value": "4,063"
+      },
+      {
+        "name": "Avg. Response Time",
+        "description": "Quick turnaround",
+        "value": "2.5 hrs"
+      },
+      {
+        "name": "Success Rate",
+        "description": "Client satisfaction",
+        "value": "94%"
+      }
+    ]
+  }
+}

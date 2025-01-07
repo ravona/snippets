@@ -1,0 +1,37 @@
+$app_min_width: 375px;
+$app_gutter: var(--spacing-sm);
+
+.app {
+  min-width: $app_min_width;
+  min-height: 100dvh;
+  font-size: var(--fz-sm);
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+  font-family: var(--ff-primary);
+}
+
+.header,
+.main,
+.footer {
+  padding: $app_gutter;
+}
+
+.header,
+.footer {
+  // background-color: var(--color-brand-30);
+
+  z-index: var(--z-2);
+}
+
+.header {
+  // position: sticky;
+  // top: 0;
+}
+
+.nav {
+  overflow-x: auto;
+}
+
+.main {
+  overflow-y: auto;
+}
